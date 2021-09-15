@@ -7,9 +7,15 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class AccountTest {
 
-    @Test
-	@Disabled
-    public void depositAnAmountToIncreaseTheBalance() {
-        assertThat("your first test").isBlank();
-    }
+  @Test
+  public void depositAnAmountToIncreaseTheBalance() {
+      assertThat("").isBlank();
+  }
+
+  @Test
+  public void startingBalanceZero() {
+    Account account = new Account();
+    assertThat(account.getBalance()).isEqualTo(0);
+  }
+
 }
