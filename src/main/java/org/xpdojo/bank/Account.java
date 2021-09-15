@@ -7,8 +7,12 @@ public class Account {
     return balance;
   }
 
-  public void setBalance(Integer balance) {
-    this.balance = balance;
+  public void addBalance(Integer balance) {
+    this.balance += balance;
+  }
+
+  public void withdraw(Integer amount) {
+    this.balance -= amount;
   }
 
 
